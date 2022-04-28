@@ -16,7 +16,7 @@ export default function JobCard({ job }) {
           maxWidth: 345,
           height: 300,
           bgcolor: "primary",
-          color: ("primary".display = "flex"),
+          color: "primary",
           position: "relative",
         }}
       >

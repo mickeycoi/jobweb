@@ -1,8 +1,9 @@
-import SearchAppBar from "./components/SearchAppBar";
+import PrimarySearchAppBar from "./components/PrimarySearchAppBar";
 import { Container } from "@mui/material";
 import JobList from "./components/JobList";
 import jobs from "./data.json";
 import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import * as React from "react";
@@ -68,7 +69,7 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <SearchAppBar />
+        <PrimarySearchAppBar />
         <MyApp />
         <Container>
           <JobList jobs={jobs} />
